@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const fetchPopularMovies = async () => {
+		// https://api.themoviedb.org/3/movie/popular?api_key=1fe844e090d2aab7a7976a3cbfa5d31b&language=en-US&page=1
+	}
+
+	return (
+		<div className='App'>
+			<h1>Movies</h1>
+		</div>
+	)
 }
 
-export default App;
+export default App
