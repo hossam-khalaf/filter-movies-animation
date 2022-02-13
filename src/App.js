@@ -1,8 +1,9 @@
 import './App.css'
 import { useEffect, useState } from 'react'
+import Movie from './Movie'
 
 function App() {
-	const [popular, setPopular] = useState([])
+	const [popularMovies, setPopularMovies] = useState([])
 
 	useEffect(() => {
 		fetchPopularMovies()
@@ -14,12 +15,16 @@ function App() {
 
 		const data = await fetch(url)
 		const movies = await data.json()
-		setPopular(movies.results)
+		setPopularMovies(movies.results)
 	}
 
 	return (
 		<div className='App'>
-			<h1>Movies</h1>
+			<div className='popular-movies'>
+				{popularMovies.map((movie) => {
+					return <Movie key={movie.id} movie={movie} />
+				})}
+			</div>
 		</div>
 	)
 }
