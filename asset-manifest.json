@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/filter-movies-animation/static/css/main.e2d0dfba.css",
+    "main.js": "/filter-movies-animation/static/js/main.cbcd8cd2.js",
+    "static/js/787.03e84fb9.chunk.js": "/filter-movies-animation/static/js/787.03e84fb9.chunk.js",
+    "index.html": "/filter-movies-animation/index.html",
+    "main.e2d0dfba.css.map": "/filter-movies-animation/static/css/main.e2d0dfba.css.map",
+    "main.cbcd8cd2.js.map": "/filter-movies-animation/static/js/main.cbcd8cd2.js.map",
+    "787.03e84fb9.chunk.js.map": "/filter-movies-animation/static/js/787.03e84fb9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2d0dfba.css",
+    "static/js/main.cbcd8cd2.js"
+  ]
+}
