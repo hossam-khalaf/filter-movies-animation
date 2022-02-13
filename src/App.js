@@ -1,9 +1,12 @@
 import './App.css'
 import { useEffect, useState } from 'react'
 import Movie from './Movie'
+import Filter from './Filter'
 
 function App() {
 	const [popularMovies, setPopularMovies] = useState([])
+	const [filteredMovies, setFilteredMovies] = useState([])
+	const [activeGenre, setActiveGenre] = useState(0)
 
 	useEffect(() => {
 		fetchPopularMovies()
@@ -16,12 +19,19 @@ function App() {
 		const data = await fetch(url)
 		const movies = await data.json()
 		setPopularMovies(movies.results)
+		setFilteredMovies(movies.results)
 	}
 
 	return (
 		<div className='App'>
+			<Filter
+				popularMovies={popularMovies}
+				setFilteredMovies={setFilteredMovies}
+				activeGenre={activeGenre}
+				setActiveGenre={setActiveGenre}
+			/>
 			<div className='popular-movies'>
-				{popularMovies.map((movie) => {
+				{filteredMovies.map((movie) => {
 					return <Movie key={movie.id} movie={movie} />
 				})}
 			</div>

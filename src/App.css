@@ -16,3 +16,22 @@ img {
 h2 {
 	font-size: 0.8rem;
 }
+
+.filter-container button {
+	margin-right: 2rem;
+	min-width: 2rem;
+	padding: 0.5rem 1rem;
+	border: 2px solid rgb(0, 81, 128);
+	background: #fff;
+	color: rgb(0, 81, 128);
+	border-radius: 0.7rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+}
+
+button.active,
+button:hover {
+	background: rgb(0, 81, 128);
+	color: #fff;
+}
